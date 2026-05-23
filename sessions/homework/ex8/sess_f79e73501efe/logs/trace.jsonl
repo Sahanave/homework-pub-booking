@@ -1,0 +1,5 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:40:23.839072+00:00", "payload": {"text": "Hello I am bonjin", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:40:25.986976+00:00", "payload": {"text": "What can I do for ye, Bonjin?", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:40:33.264641+00:00", "payload": {"text": "I want to book a table for 40", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:40:36.408264+00:00", "payload": {"text": "Too big for us, I'm afraid. Try The Royal Oak or Bennet's Bar, they can handle large parties.", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:40:46.967882+00:00", "payload": {"text": "Okay bye", "turn": 2, "mode": "text"}}

@@ -1,0 +1,8 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:38:57.934522+00:00", "payload": {"text": "Hey hi this is Sahana", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:39:05.575111+00:00", "payload": {"text": "What can I do for ye, Sahana?", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:39:22.823962+00:00", "payload": {"text": "I want to book a table for 6.", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:39:26.105951+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in. What's the date and time?", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:39:38.742213+00:00", "payload": {"text": "Tomorrow, 7PM", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:39:51.955995+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for tomorrow at 7. What's the contact number?", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:39:59.978878+00:00", "payload": {"text": "88999", "turn": 3, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:40:02.076735+00:00", "payload": {"text": "Got it, 88999. See ye tomorrow at 7.", "turn": 3, "mode": "text"}}

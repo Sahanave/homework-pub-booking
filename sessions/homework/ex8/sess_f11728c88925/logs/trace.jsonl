@@ -1,0 +1,12 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:40:54.371071+00:00", "payload": {"text": "Hello I am madhu", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:41:16.731338+00:00", "payload": {"text": "What can I do for ye, Madhu?", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:41:46.860781+00:00", "payload": {"text": "I need table for 10", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:42:08.199252+00:00", "payload": {"text": "Too big a group, I'm afraid. Try The Royal Oak or Bennet's Bar.", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:42:21.731162+00:00", "payload": {"text": "what is the biggest table you can take", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:42:24.974928+00:00", "payload": {"text": "Eight's the limit here. Any more and it's too big for us.", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:42:32.328181+00:00", "payload": {"text": "okay ill take that", "turn": 3, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:42:39.654107+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in. What's the contact number?", "turn": 3, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:42:44.656127+00:00", "payload": {"text": "88", "turn": 4, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:42:46.269473+00:00", "payload": {"text": "Not a number, laddie. Need a proper phone number.", "turn": 4, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-23T23:42:52.404520+00:00", "payload": {"text": "56898", "turn": 5, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-23T23:42:54.225000+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for the date and time. What's the date and time ye want?", "turn": 5, "mode": "text"}}
