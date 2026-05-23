@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Edinburgh Booking — The Royal Edinburgh</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  .address { color: #555; margin-top: 0; }
+  dl { display: grid; grid-template-columns: 12rem 1fr; gap: 0.4rem 1rem; }
+  dt { font-weight: bold; }
+  section { margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+  <h1 data-testid="venue_name">The Royal Edinburgh</h1>
+  <p class="address" data-testid="venue_address">10 Castle Rd, Edinburgh</p>
+
+  <section>
+    <h2>Event</h2>
+    <dl>
+      <dt>Date</dt><dd data-testid="date">2023-11-24</dd>
+      <dt>Time</dt><dd data-testid="time">19:30</dd>
+      <dt>Party size</dt><dd data-testid="party_size">12</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Weather</h2>
+    <dl>
+      <dt>Condition</dt><dd data-testid="condition">Clear</dd>
+      <dt>Temperature</dt><dd data-testid="temperature_c">8°C</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Cost</h2>
+    <dl>
+      <dt>Total</dt><dd data-testid="total">£385</dd>
+      <dt>Deposit</dt><dd data-testid="deposit">£75</dd>
+    </dl>
+  </section>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "ticket_id": "tk_66410f65",
+  "operation": "executor.run_subgoal/sg_2",
+  "started_at": "2026-05-23T19:55:48.434271+00:00",
+  "completed_at": "2026-05-23T19:56:51.074349+00:00",
+  "duration_ms": 62640,
+  "outputs": [
+    {
+      "path": "/Users/sahanavenkatesh/nebius/homework-pub-booking/sessions/examples/ex5-edinburgh-research/sess_d36eb7103465/logs/tickets/tk_66410f65/raw_output.json",
+      "sha256": "16840f1b68fb7c1a030f58fbc7042ba2551158c16eb1a2f98e675c63fe02c7b4",
+      "size_bytes": 3862,
+      "content_type": "application/json"
+    }
+  ],
+  "metrics": {
+    "tool_calls": 3,
+    "turns_used": 4,
+    "handoff_requested": false
+  }
+}
