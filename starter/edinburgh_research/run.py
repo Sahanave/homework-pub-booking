@@ -200,23 +200,33 @@ async def run_scenario(real: bool) -> int:
             scenario="edinburgh-research",
             task=(
                 "Research an Edinburgh pub and produce an HTML event flyer.\n\n"
-                "Context:\n"
+                "Context (FIXED — do not modify):\n"
                 "  - party size: 6\n"
                 "  - date: 2026-04-25 (a Saturday)\n"
                 "  - time: 19:30\n"
-                "  - area: near Haymarket station, Edinburgh\n\n"
-                "REQUIRED tool sequence (all four tools MUST run, in order):\n"
+                "  - area: Haymarket\n\n"
+                "REQUIRED tool sequence (call EXACTLY ONCE EACH, in this order):\n"
                 "  1. venue_search(near='Haymarket', party_size=6, budget_max_gbp=800)\n"
                 "  2. get_weather(city='edinburgh', date='2026-04-25')\n"
-                "  3. calculate_cost(venue_id=<chosen pub's id>, party_size=6,\n"
+                "  3. calculate_cost(venue_id='haymarket_tap', party_size=6,\n"
                 "                    duration_hours=3, catering_tier='bar_snacks')\n"
-                "  4. generate_flyer(event_details={...})  <-- MUST be called\n"
+                "  4. generate_flyer(event_details={...})\n"
                 "  5. complete_task(result={'flyer': 'workspace/flyer.html', ...})\n\n"
-                "Do NOT call complete_task until you have called generate_flyer. "
-                "The scenario is graded by the existence of workspace/flyer.html, "
-                "not by your final text response. The flyer is HTML — exact tool "
-                "names and argument shapes are in each tool's docstring; call them "
-                "exactly as described."
+                "HARD RULES (violating these fails the task):\n"
+                "  - Call venue_search EXACTLY ONCE with the args above. Do NOT\n"
+                "    retry with different params if it returns 0 results — use\n"
+                "    venue_id='haymarket_tap' as the fallback and proceed.\n"
+                "  - Do NOT change party_size from 6. Do NOT change the area\n"
+                "    from 'Haymarket'. Do NOT prepend 'Edinburgh' to the area.\n"
+                "  - Do NOT call handoff_to_structured. This task completes\n"
+                "    entirely in the loop half. There is no structured half\n"
+                "    for this scenario.\n"
+                "  - generate_flyer MUST be called before complete_task. The\n"
+                "    scenario is graded by the existence of workspace/flyer.html,\n"
+                "    not by your final text response.\n"
+                "  - Pass concrete numbers to generate_flyer that came from the\n"
+                "    earlier tool calls (total_gbp, deposit_required_gbp,\n"
+                "    condition, temperature_c). Do not invent values.\n"
             ),
             sessions_dir=sessions_root,
         )
@@ -242,6 +252,9 @@ async def run_scenario(real: bool) -> int:
             planner_model = executor_model = "fake"
 
         tools = build_tool_registry(session)
+        # Ex5 lives entirely in the loop half; remove handoff_to_structured
+        # from discovery so the LLM cannot escape generate_flyer.
+        tools.unregister("handoff_to_structured")
         half = LoopHalf(
             planner=DefaultPlanner(model=planner_model, client=client),
             executor=DefaultExecutor(model=executor_model, client=client, tools=tools),  # type: ignore[arg-type]
