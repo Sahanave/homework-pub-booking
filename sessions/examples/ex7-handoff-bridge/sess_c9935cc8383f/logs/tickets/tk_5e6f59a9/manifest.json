@@ -1,0 +1,21 @@
+{
+  "ticket_id": "tk_5e6f59a9",
+  "operation": "planner.plan",
+  "started_at": "2026-05-23T23:32:30.047889+00:00",
+  "completed_at": "2026-05-23T23:32:30.048699+00:00",
+  "duration_ms": 0,
+  "outputs": [
+    {
+      "path": "sessions/examples/ex7-handoff-bridge/sess_c9935cc8383f/logs/tickets/tk_5e6f59a9/raw_output.json",
+      "sha256": "73a9a35fad895abc4c130587614a9a9ea02ba172e8df21756c8a464c90e875fe",
+      "size_bytes": 259,
+      "content_type": "application/json"
+    }
+  ],
+  "metrics": {
+    "num_subgoals": 1,
+    "llm_tokens_in": 10,
+    "llm_tokens_out": 10,
+    "llm_model": "fake"
+  }
+}

@@ -22,6 +22,9 @@ from sovereign_agent.session.directory import create_session
 from starter.edinburgh_research.tools import build_tool_registry
 from starter.handoff_bridge.bridge import HandoffBridge
 from starter.rasa_half.structured_half import RasaStructuredHalf, spawn_mock_rasa
+from pathlib import Path
+
+SOVEREIGN_AGENT_DATA_DIR=Path("./sessions/examples/ex7-handoff-bridge")
 
 
 def _build_fake_client_two_rounds() -> FakeLLMClient:
@@ -126,7 +129,7 @@ async def run_scenario(real: bool) -> int:
         session = create_session(
             scenario="ex7-handoff-bridge",
             task="Book a venue for 12 people in Haymarket, Friday 19:30.",
-            sessions_dir=sessions_root,
+            sessions_dir=SOVEREIGN_AGENT_DATA_DIR,
         )
         print(f"Session {session.session_id}")
         print(f"  dir: {session.directory}")

@@ -1,0 +1,20 @@
+{
+  "ticket_id": "tk_4deb6c9a",
+  "operation": "executor.run_subgoal/sg_1",
+  "started_at": "2026-05-23T23:32:30.054858+00:00",
+  "completed_at": "2026-05-23T23:32:30.057528+00:00",
+  "duration_ms": 2,
+  "outputs": [
+    {
+      "path": "sessions/examples/ex7-handoff-bridge/sess_c9935cc8383f/logs/tickets/tk_4deb6c9a/raw_output.json",
+      "sha256": "f0850c7d27a5763ca019d293ba35ce62b7a89bf1dd0312f33f807ed198f14b69",
+      "size_bytes": 1510,
+      "content_type": "application/json"
+    }
+  ],
+  "metrics": {
+    "tool_calls": 2,
+    "turns_used": 2,
+    "handoff_requested": true
+  }
+}
