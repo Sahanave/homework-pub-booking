@@ -1,0 +1,4 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:57:57.919621+00:00", "payload": {"text": "I'm Sahana .", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:58:00.702540+00:00", "payload": {"text": "What can I do for ye, Sahana?", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:58:17.080166+00:00", "payload": {"text": "I want to book a book , a reservation for 8 p.m. today .", "turn": 1, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:58:18.498377+00:00", "payload": {"text": "How many in yer party, lass?", "turn": 1, "mode": "voice"}}

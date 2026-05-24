@@ -1,0 +1,12 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:51:44.943619+00:00", "payload": {"text": "Hello", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:51:46.571910+00:00", "payload": {"text": "What can I do for ye?", "turn": 0, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:51:53.227052+00:00", "payload": {"text": "I want to book a table for 10", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:51:54.998595+00:00", "payload": {"text": "Sorry, too big a group. Try The Royal Oak or Bennet's Bar, they can handle larger parties.", "turn": 1, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:52:02.771362+00:00", "payload": {"text": "What about 7", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:52:04.394189+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in. What's the date and time?", "turn": 2, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:52:13.513452+00:00", "payload": {"text": "Today , in next 30 mins", "turn": 3, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:52:15.382314+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for today. What's the contact number?", "turn": 3, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:52:20.410390+00:00", "payload": {"text": "999454", "turn": 4, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:52:22.339996+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for today at 30 mins from now. Contact number is 999454, got it.", "turn": 4, "mode": "text"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-24T00:52:35.787276+00:00", "payload": {"text": "Thanks", "turn": 5, "mode": "text"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-24T00:52:37.086162+00:00", "payload": {"text": "Ye're welcome.", "turn": 5, "mode": "text"}}
