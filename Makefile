@@ -65,7 +65,7 @@ help: ## Structured help — your actual starting point
 	@echo ''
 	@echo '  ${GREEN}Ex8${RESET}  — Voice pipeline ${DIM}${RESET}'
 	@echo '      ${CYAN}make ex8-text${RESET}            text mode (free, no mic)'
-	@echo '      ${CYAN}make ex8-voice${RESET}           real Speechmatics + Rime (needs setup-voice + mic)'
+	@echo '      ${CYAN}make ex8-voice${RESET}           real Speechmatics + ElevenLabs/Rime (needs setup-voice + mic)'
 	@echo ''
 	@echo '${YELLOW}${BOLD}🔧 OPTIONAL INSTALLS${RESET} ${DIM}(install only when you reach that exercise)${RESET}'
 	@echo '  ${CYAN}make setup-rasa${RESET}              rasa-pro for Ex6 (~400MB, ~2min)'
@@ -210,13 +210,14 @@ setup-rasa: ## Install rasa-pro + deps (needed for Ex6 tier 2 and 3)
 	@echo "✓ rasa-pro installed. You can now run: make rasa-actions / make rasa-serve"
 
 .PHONY: setup-voice
-setup-voice: ## Install speechmatics + rime TTS + mic deps (needed for Ex8 voice mode)
+setup-voice: ## Install speechmatics + TTS + mic deps (needed for Ex8 voice mode)
 	@echo "▶ Installing voice deps (speechmatics, sounddevice, pydub)..."
 	@echo "   Requires portaudio. On macOS: brew install portaudio"
 	@$(UV) sync --extra voice
 	@echo ""
 	@echo "✓ voice deps installed. For Ex8 voice mode you still need:"
-	@echo "    - SPEECHMATICS_KEY + RIME_API_KEY in .env"
+	@echo "    - SPEECHMATICS_KEY in .env"
+	@echo "    - ELEVENLABS_API_KEY (preferred) or RIME_API_KEY in .env"
 	@echo "    - macOS: System Settings → Privacy & Security → Microphone"
 	@echo "             → grant your terminal app access"
 	@echo "    - Then: make ex8-voice"
