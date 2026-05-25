@@ -1,0 +1,10 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:37:16.170009+00:00", "payload": {"text": "Hi , I'm Sahana .", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:37:18.277506+00:00", "payload": {"text": "What can I do for ye, Sahana?", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:37:44.126314+00:00", "payload": {"text": "Can you book a table for two ?", "turn": 1, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:37:48.271913+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in. What's the date and time?", "turn": 1, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:38:00.706743+00:00", "payload": {"text": "Today , 8 p.m. . It's our anniversary .", "turn": 2, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:38:02.300643+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for tonight at 8. What's the contact number?", "turn": 2, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:38:14.671175+00:00", "payload": {"text": "44323399 .", "turn": 3, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:38:19.093060+00:00", "payload": {"text": "Got it, Sahana. See ye at 8.", "turn": 3, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:38:27.666918+00:00", "payload": {"text": "All right . Thank you . Bye .", "turn": 4, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:38:28.490657+00:00", "payload": {"text": "Cheerio, Sahana.", "turn": 4, "mode": "voice"}}

@@ -1,0 +1,20 @@
+{
+  "ticket_id": "tk_ddd3d948",
+  "operation": "executor.run_subgoal/sg_1",
+  "started_at": "2026-05-24T01:07:29.298286+00:00",
+  "completed_at": "2026-05-24T01:07:29.301474+00:00",
+  "duration_ms": 3,
+  "outputs": [
+    {
+      "path": "sessions/examples/ex7-handoff-bridge/sess_52ac1224fa78/logs/tickets/tk_ddd3d948/raw_output.json",
+      "sha256": "f0850c7d27a5763ca019d293ba35ce62b7a89bf1dd0312f33f807ed198f14b69",
+      "size_bytes": 1510,
+      "content_type": "application/json"
+    }
+  ],
+  "metrics": {
+    "tool_calls": 2,
+    "turns_used": 2,
+    "handoff_requested": true
+  }
+}

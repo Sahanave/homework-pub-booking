@@ -1,0 +1,12 @@
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:40:17.707115+00:00", "payload": {"text": "Hi , I'm Sahana . How are you doing today ?", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:40:46.531181+00:00", "payload": {"text": "I'm doin' fine, lass. What can I dae for ye?", "turn": 0, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:40:57.058292+00:00", "payload": {"text": "I need to book a table for two today .", "turn": 1, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:41:10.181642+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in. What's the contact number?", "turn": 1, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:41:22.900665+00:00", "payload": {"text": "It's 27 , 28 . 22 . 15 .", "turn": 2, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:41:23.792140+00:00", "payload": {"text": "Aye, we can do that. I'll pencil you in for today. What time were ye thinkin'?", "turn": 2, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:41:33.577013+00:00", "payload": {"text": "8 p.m. .", "turn": 3, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:41:34.543614+00:00", "payload": {"text": "Aye, 8 p.m. it is. I'll see ye then, lass.", "turn": 3, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:41:43.338083+00:00", "payload": {"text": "Awesome . Thank you . Goodbye .", "turn": 4, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:41:44.581752+00:00", "payload": {"text": "Cheerio, lass.", "turn": 4, "mode": "voice"}}
+{"event_type": "voice.utterance_in", "actor": "user", "timestamp": "2026-05-25T15:41:51.911162+00:00", "payload": {"text": "Goodbye .", "turn": 5, "mode": "voice"}}
+{"event_type": "voice.utterance_out", "actor": "manager", "timestamp": "2026-05-25T15:41:52.368867+00:00", "payload": {"text": "Ta-ra.", "turn": 5, "mode": "voice"}}
